@@ -84,3 +84,12 @@ footer {
 	background-color:#FFFFFF;
 	padding-top: 25px;
 }
+ul {
+	margin-left: 41px;
+	font-family: 'lato', sans-serif;
+	font-size: 15px;
+	list-style: none;
+}
+ul a:visited {
+	color:#00CCFF;
+}
