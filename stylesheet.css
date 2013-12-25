@@ -13,10 +13,10 @@
 	text-align:center; 
 }
 */
-@import url(http://weloveiconfonts.com/api/?family=brandico);
-/* brandico */
-[class*="brandico-"]:before {
-  font-family: 'brandico', sans-serif;
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
 }
 * { 
 margin: 0; 
@@ -40,10 +40,15 @@ h2 {
 	font-size: 18px;
 	margin-top: 0;
 	padding-top: 0;
+	margin-bottom: 20px;
 }
 body {
 	background-color: #282828 ;
 }
 .clickables {
 	color: white;
+	text-align: center;
+}
+span:first-of-type {
+	margin-right: 5px;
 }
