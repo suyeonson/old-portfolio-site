@@ -63,6 +63,8 @@ h1 {
 	margin-left: 80px;
 	font-family: 'Crete Round', serif;
 	font-size: 20px;
+	position: fixed;
+	overflow: auto;
 }
 hr {
 	margin-top: 160px;
@@ -85,18 +87,21 @@ footer {
 	padding-top: 25px;
 }
 ul {
+	position:fixed;
+	margin-top: 210px;
 	margin-left: 41px;
 	font-family: 'lato', sans-serif;
 	font-size: 15px;
 	list-style: none;
 	font-color: black;
 	line-height: 23px;
+	overflow: auto;
 }
 ul a:link{
 	color: black;
 }
 ul a:visited{
-	color: #00CCFF;
+	font-style: italic;
 }
 ul a:hover {
 	font-style: italic;
