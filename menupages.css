@@ -59,7 +59,7 @@ a:hover {
 	color: #00CCFF;
 }
 h1 {
-	margin-top: 20px;
+	margin-top: 180px;
 	margin-left: 80px;
 	font-family: 'Crete Round', serif;
 	font-size: 20px;
@@ -112,13 +112,16 @@ html, body {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-	margin: 0 auto -500px; 
+	margin: 0 auto -300px; 
 	text-align: center;
 }
 .footer, .push {
-	height: 500px; 
+	height: 300px; 
 	font-family: 'Crete Round', serif;
 	font-size: 10px;
 	text-align: center;
+}
+#contentcontainer {
+	clear: both;
 }
 
