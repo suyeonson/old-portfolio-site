@@ -13,23 +13,37 @@
 	text-align:center; 
 }
 */
+@import url(http://weloveiconfonts.com/api/?family=brandico);
+/* brandico */
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+}
 * { 
 margin: 0; 
 padding: 0; 
 } 
 h1 {
 	font-family: Rockwell, serif;
+	color: #FFFFFF;
 	text-align: center;
 	font-size: 70px;
-	margin-top: 180px;
+	margin-top: 150px;
 	margin-bottom: 0;
 	padding-bottom: 0;
 	line-height: 100px;
 }
 h2 {
 	font-family: Helvetica, sans-serif;
+	color: #888888 ;
+	font-weight: lighter;
 	text-align: center;
-	font-size: 20px;
+	font-size: 18px;
 	margin-top: 0;
 	padding-top: 0;
+}
+body {
+	background-color: #282828 ;
+}
+.clickables {
+	color: white;
 }
