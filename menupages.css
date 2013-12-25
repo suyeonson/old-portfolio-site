@@ -1,8 +1,3 @@
-@import url(http://weloveiconfonts.com/api/?family=entypo);
-/* entypo */
-[class*="entypo-"]:before {
-  font-family: 'entypo', sans-serif;
-}
 #header_container { 
 	background:#eee; 
 	height:150px; left:0; 
@@ -13,18 +8,19 @@
 #header_home { 
 	text-align:center; 
 	position: absolute;
-	top: 50%;
-	font-family: 'entypo', sans-serif;
+	top:10%;
+	font-family: 'lato', sans-serif;
 	font-size: 100px;
+	font-stretch: extra-condensed;
 	display: inline-block;
-	margin-left: 50px;
+	margin-left: 80px;
 }
 #header_menu {
 	text-align:right; 
 	position: relative;
 	top: 50%;
 	float:right;
-	font-family: 'entypo', sans-serif;
+	font-family: 'lato', sans-serif;
 	display: inline-block;
 	margin-right: 100px;
 	padding-bottom: 60px;
@@ -32,20 +28,20 @@
 #about {
 	margin-right: 40px;
 	padding-left:10px;
-	font-family: 'entypo', sans-serif;
+	font-family: 'lato', sans-serif;
 	display: inline-block;
 }
 #writing {
 	margin-right: 40px;
 	padding-left:10px;
-	font-family: 'entypo', sans-serif;
+	font-family: 'lato', sans-serif;
 	display: inline-block;
 	position: relative;
 }
 #multimedia {
 	margin-right: 40px;
 	padding-left:10px;
-	font-family: 'entypo', sans-serif;
+	font-family: 'lato', sans-serif;
 	display: inline-block;
 }
 a {
