@@ -91,6 +91,14 @@ ul {
 	list-style: none;
 	font-color: black;
 }
-ul:a:visited {
-	color:#00CCFF;
+ul a{
+	color: black;
 }
+ul a:hover {
+	font-style: italic;
+	color: black;
+}
+ul a:visited{
+	color: #00CCFF;
+}
+
