@@ -89,7 +89,8 @@ ul {
 	font-family: 'lato', sans-serif;
 	font-size: 15px;
 	list-style: none;
+	font-color: black;
 }
-ul a:visited {
+ul:a:visited {
 	color:#00CCFF;
 }
