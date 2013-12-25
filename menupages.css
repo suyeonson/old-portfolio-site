@@ -1,0 +1,28 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+* { 
+margin: 0; 
+padding: 0; 
+} 
+#header_container { 
+	background:#eee; 
+	height:125px; left:0; 
+	position:fixed; 
+	width:100%; top:0; 
+}
+
+#header_home { 
+	line-height:60px; 
+	margin:0 auto; 
+	width:940px; 
+	text-align:left; 
+}
+#header_menu {
+	line-height:60px; 
+	margin:0 auto; 
+	width:940px; 
+	text-align:right; 	
+}
