@@ -90,6 +90,7 @@ ul {
 	font-size: 15px;
 	list-style: none;
 	font-color: black;
+	line-height: 23px;
 }
 ul a:link{
 	color: black;
