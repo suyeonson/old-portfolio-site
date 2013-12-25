@@ -94,11 +94,12 @@ ul {
 ul a{
 	color: black;
 }
+ul a:visited{
+	color: #00CCFF;
+}
 ul a:hover {
 	font-style: italic;
 	color: black;
 }
-ul a:visited{
-	color: #00CCFF;
-}
+
 
