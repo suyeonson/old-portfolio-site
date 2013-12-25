@@ -1,9 +1,16 @@
+#pagetitle {
+	font-family: 'Crete Round', serif;
+	margin-top: 150px;
+	font-size: 80px;
+	clear:both;
+}
 #header_container { 
 	background:#eee; 
 	height:150px; left:0; 
 	position:fixed; 
 	width:100%; 
-	top:0; 
+	top:0;
+	clear:both; 
 }
 #header_home { 
 	text-align:center; 
@@ -23,6 +30,7 @@
 	display: inline-block;
 	margin-right: 100px;
 	padding-bottom: 60px;
+	clear:right;
 }
 #about {
 	margin-right: 40px;
