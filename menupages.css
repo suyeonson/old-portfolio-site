@@ -102,5 +102,23 @@ ul a:hover {
 	font-style: italic;
 	color: black;
 }
-
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -500px; 
+	text-align: center;
+}
+.footer, .push {
+	height: 500px; 
+	font-family: 'Crete Round', serif;
+	font-size: 10px;
+	text-align: center;
+}
 
