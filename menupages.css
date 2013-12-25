@@ -1,11 +1,10 @@
-#pagetitle {
-	font-family: 'Crete Round', serif;
-	margin-top: 150px;
-	font-size: 80px;
-	clear:both;
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
 }
 #header_container { 
-	background:#eee; 
+	background:#FFFFFF; 
 	height:150px; left:0; 
 	position:fixed; 
 	width:100%; 
@@ -58,4 +57,13 @@ a {
 a:hover { 
 	opacity: 0.4;
 	color: #00CCFF;
+}
+hr {
+	display:inline-block;
+	width: 80%;
+	height: 3px;
+	border-color: black;
+	background-color: black;
+	float: left;
+	margin-top: 60px;
 }
