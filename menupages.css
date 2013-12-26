@@ -113,9 +113,10 @@ html, body {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
+	overflow: hidden;
 }
 #stories {
-	margin-top: 180px;
+	margin-top: 20px;
 	margin-left: 80px;
 	font-family: 'Crete Round', serif;
 	font-size: 20px;
