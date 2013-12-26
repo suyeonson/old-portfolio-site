@@ -123,3 +123,26 @@ html, body {
 	position: relative;
 	overflow: auto;	
 }
+#website, #facebook, #twitter {
+	margin-right: 5px;
+	margin-left: 5px;
+	display: inline-block;
+	float: left;
+	padding-top: 7px;
+}
+#website, #facebook, #twitter span {
+	font-size: 15px;
+}
+#website span {
+	color: #8A8A8A;
+}
+#facebook span {
+	color: #8A8A8A;
+}
+#twitter span {
+	color: #8A8A8A;
+}
+h3 {
+	display:inline-block;
+	float: left;
+}
