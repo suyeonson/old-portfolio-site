@@ -97,15 +97,11 @@ ul {
 	line-height: 23px;
 	overflow: auto;
 }
-ul a:link{
-	color: black;
-}
 ul a:visited{
 	font-style: italic;
 }
 ul a:hover {
 	font-style: italic;
-	color: black;
 }
 * {
 	margin: 0;
