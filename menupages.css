@@ -63,8 +63,8 @@ hr {
 	background-color: black;
 	outline-color:black;
 }
-footer {
-	position: fixed;
+#footer {
+	position: relative;
 	margin-top: 500px;
 	text-align: center ;
 	font-size: 12px ;
@@ -90,30 +90,7 @@ ul a:visited{
 	font-style: italic;
 }
 ul a:hover {
-	font-style: italic;
-}
-* {
-	margin: 0;
-}
-html, body {
-	height: 100%;
-}
-.wrapper {
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	margin: 0 auto -300px; 
-	text-align: center;
-}
-.footer, .push {
-	height: 50px; 
-	font-family: 'Crete Round', serif;
-	font-size: 11px;
-	text-align: center;
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	overflow: hidden;
+	font-style: italic; 
 }
 #stories {
 	margin-top: 20px;
