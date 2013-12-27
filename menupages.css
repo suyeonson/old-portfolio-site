@@ -3,6 +3,9 @@
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
 }
+* {
+	margin: 0;
+}
 #header_container { 
 	background:#FFFFFF; 
 	height:150px; left:0; 
@@ -65,18 +68,18 @@ hr {
 }
 #footer {
 	position: relative;
-	margin-top: 500px;
+	margin-top: 20px;
 	text-align: center ;
 	font-size: 12px ;
 	font-family: 'Crete Round', serif;
 	width: 100%;
-	height: 100%;
+	margin-bottom: 50px;
 	background-color:#FFFFFF;
 	padding-top: 25px;
 }
 ul {
 	position:relative;
-	margin-top: 6px;
+	margin-top: 30px;
 	margin-left: -38px;
 	font-family: 'lato', sans-serif;
 	font-size: 15px;
@@ -84,7 +87,7 @@ ul {
 	font-color: black;
 	line-height: 23px;
 	overflow: auto;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 ul a:visited{
 	font-style: italic;
@@ -93,7 +96,7 @@ ul a:hover {
 	font-style: italic; 
 }
 #stories {
-	margin-top: 20px;
+	margin-top: 10px;
 	margin-left: 80px;
 	font-family: 'Crete Round', serif;
 	font-size: 20px;
