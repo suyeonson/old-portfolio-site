@@ -64,10 +64,10 @@ footer {
 img {
 	height: 200px;
 	width: 200px;
-	padding-right: 100px;
+	padding-right: 10%;
 }
 .menu {
 	text-align: center;
 	margin-top: 120px;
-	margin-left: 80px;
+	margin-left: 7.5%;
 }
