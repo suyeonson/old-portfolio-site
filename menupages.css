@@ -76,6 +76,7 @@ hr {
 	margin-bottom: 50px;
 	background-color:#FFFFFF;
 	padding-top: 25px;
+	clear: both;
 }
 ul {
 	position:relative;
@@ -125,4 +126,27 @@ ul a:hover {
 h3 {
 	display:inline-block;
 	float: left;
+	font-family: 'Crete Round', serif;
+	font-size: 20px;
+}
+img {
+	height: auto;
+	max-width: 100%;
+}
+#research {
+	width: 55%;
+	height: 200px;
+	margin-left: 80px;
+	margin-bottom: 200px;
+	margin-top: 10px;
+	display: inline-block;
+	float: left;
+}
+#researchbody {
+	float: left;
+	font-family: 'lato', sans-serif;
+	font-size: 13px;
+	margin-top: 10px;
+	margin-left: 10px;
+	display: inline-block;
 }
