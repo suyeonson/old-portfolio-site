@@ -146,8 +146,8 @@ img {
 	float: left;
 	font-family: 'lato', sans-serif;
 	font-size: 13px;
-	margin-top: 10px;
-	margin-left: 10px;
+	margin-top: 15px;
+	margin-left: 8px;
 	display: inline-block;
 	clear: right;
 }
@@ -168,7 +168,7 @@ img {
 	font-family: 'lato', sans-serif;
 	font-size: 13px;
 	margin-top: 10px;
-	margin-left: 20px;
+	margin-left: 10px;
 	margin-bottom: 100px;
 	display: inline-block;
 }
