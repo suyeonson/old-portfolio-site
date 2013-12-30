@@ -137,7 +137,7 @@ img {
 	width: 55%;
 	height: 200px;
 	margin-left: 80px;
-	margin-bottom: 200px;
+	margin-bottom: 120px;
 	margin-top: 10px;
 	display: inline-block;
 	float: left;
@@ -148,5 +148,27 @@ img {
 	font-size: 13px;
 	margin-top: 10px;
 	margin-left: 10px;
+	display: inline-block;
+	clear: right;
+}
+#photobody {
+	float: left;
+	font-family: 'lato', sans-serif;
+	font-size: 13px;
+	text-align: right;
+	margin-top: 10px;
+	margin-left: 70px;
+	margin-bottom: 100px;
+	display: inline-block;
+	clear: left;
+	width: 55%;
+}
+#videobody {
+	float: left;
+	font-family: 'lato', sans-serif;
+	font-size: 13px;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-bottom: 100px;
 	display: inline-block;
 }
