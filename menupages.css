@@ -150,6 +150,7 @@ img {
 	margin-left: 8px;
 	display: inline-block;
 	clear: right;
+	width: 35%;
 }
 #photobody {
 	float: left;
@@ -157,18 +158,18 @@ img {
 	font-size: 13px;
 	text-align: right;
 	margin-top: 10px;
-	margin-left: 70px;
+	margin-left: 73px;
 	margin-bottom: 100px;
 	display: inline-block;
 	clear: left;
 	width: 55%;
 }
 #videobody {
-	float: left;
 	font-family: 'lato', sans-serif;
 	font-size: 13px;
-	margin-top: 10px;
-	margin-left: 10px;
+	width: 35%;
+	margin-top: 45px;
+	margin-left: 8px;
 	margin-bottom: 100px;
 	display: inline-block;
 }
