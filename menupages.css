@@ -69,8 +69,8 @@ hr {
 #footer {
 	position: relative;
 	margin-top: 20px;
-	text-align: center ;
-	font-size: 12px ;
+	text-align: center;
+	font-size: 10px ;
 	font-family: 'Crete Round', serif;
 	width: 100%;
 	margin-bottom: 50px;
@@ -136,7 +136,7 @@ img {
 #research {
 	width: 55%;
 	height: 200px;
-	margin-left: 80px;
+	margin-left: 40px;
 	margin-bottom: 120px;
 	margin-top: 10px;
 	display: inline-block;
@@ -150,7 +150,7 @@ img {
 	margin-left: 8px;
 	display: inline-block;
 	clear: right;
-	width: 35%;
+	width: 37%;
 	height: 42%;
 }
 #photobody {
@@ -159,8 +159,7 @@ img {
 	font-size: 13px;
 	text-align: right;
 	margin-top: 10px;
-	margin-left: 73px;
-	margin-bottom: 100px;
+	margin-left: 33px;
 	display: inline-block;
 	clear: left;
 	width: 55%;
@@ -168,10 +167,9 @@ img {
 #videobody {
 	font-family: 'lato', sans-serif;
 	font-size: 13px;
-	width: 35%;
+	width: 37%;
 	margin-top: 10px;
-	margin-left: 8px;
-	margin-bottom: 100px;
+	margin-left: 13px;
 	display: inline-block;
 	position: relative;
 }
