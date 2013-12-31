@@ -163,6 +163,7 @@ img {
 	display: inline-block;
 	clear: left;
 	width: 55%;
+	margin-bottom: 50px;
 }
 #videobody {
 	font-family: 'lato', sans-serif;
@@ -171,7 +172,7 @@ img {
 	height: 40%;
 	margin-top: 10px;
 	margin-left: 8px;
-	margin-bottom: 50px;
+	margin-bottom: 200px;
 	display: inline-block;
 	position: relative;
 }
