@@ -196,4 +196,6 @@ li img {
 	margin-top: 10px;
 	width: 150px;
 	height: 150px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px #888888;
 }
