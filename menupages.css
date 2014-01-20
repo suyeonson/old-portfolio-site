@@ -22,30 +22,34 @@
 	margin-left: 80px;
 }
 #header_menu {
-	text-align:right; 
-	position: relative;
-	top: 55%;
+	text-align: right;
+	padding-top: 80px;
 	float:right;
 	font-family: 'lato', sans-serif;
 	display: inline-block;
-	margin-right: 100px;
+	margin-right: 80px;
 }
 #about {
 	margin-right: 40px;
-	padding-left:10px;
+	padding-left: 10px;
 	font-family: 'lato', sans-serif;
 	display: inline-block;
 }
 #writing {
 	margin-right: 40px;
-	padding-left:10px;
+	padding-left: 10px;
 	font-family: 'lato', sans-serif;
 	display: inline-block;
-	position: relative;
+}
+#code {
+	margin-right: 40px;
+	padding-left: 10px;
+	font-family: 'lato', sans-serif;
+	display: inline-block;
 }
 #multimedia {
 	margin-right: 40px;
-	padding-left:10px;
+	padding-left: 10px;
 	font-family: 'lato', sans-serif;
 	display: inline-block;
 }
@@ -58,7 +62,7 @@ a:hover {
 	color: #00CCFF;
 }
 hr {
-	margin-top: 160px;
+	margin-top: 170px;
 	margin-left:50px;
 	margin-right:50px;
 	height: 0.5px;
