@@ -1,0 +1,58 @@
+<DOCTYPE! html>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="menupages.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300|Crete+Round|Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.14.1/build/cssreset/cssreset-min.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title> suyeon son | code | rock paper scissors </title>
+</head>
+<body style="background-color: #FDF5E6; font-family: 'lato', sans-serif; font-size: 40px; text-align: center; padding-top: 200px">
+	<script>
+		var userChoice = prompt("So, what's it going to be? Rock, paper or scissors?");
+		var computerChoice = Math.random();
+		if (computerChoice < 0.33) {
+			computerChoice = "rock";
+		}
+		else if (computerChoice > 0.33 && computerChoice < 0.67) {
+			computerChoice = "paper";
+		}
+		else {
+			computerChoice = "rock";
+		}
+		var compare = function (userChoice, computerChoice) {
+			if (userChoice.toLowerCase() == computerChoice) {
+				document.write("It's a tie. We're all winners here.");
+			}
+			else if (userChoice.toLowerCase() == "rock") {
+				if (computerChoice == "scissors") {
+					document.write("The computer chose scissors. You win!");
+				} else {
+					document.write("Sorry, computer chose paper. You lose.");
+				}
+			}
+			else if (userChoice.toLowerCase() == "paper") {
+				if (computerChoice == "rock") {
+					document.write("The computer chose rock. You win!");
+				} else {
+					document.write("Sorry, computer chose scissors. You lose.");
+				}
+			}
+			else if (userChoice.toLowerCase() == "scissors") {
+				if (computerChoice == "paper") {
+					document.write("The computer chose paper. You win!");
+					} else {
+						document.write("Sorry, computer chose rock. You lose.");
+					}
+				}
+			else {
+				document.write("You can only choose rock, paper or scissors. Use real words!")
+			}
+		}
+		compare(userChoice, computerChoice);
+	</script>
+<FORM style="margin-top: 10px;">
+<INPUT TYPE="button" onClick="history.go(0)" VALUE="Play again?">
+</FORM>
+</body>
+</html>
