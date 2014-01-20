@@ -9,7 +9,7 @@
 </head>
 <body style="background-color: #FDF5E6; font-family: 'lato', sans-serif; font-size: 40px; text-align: center; padding-top: 200px">
 	<script>
-		var userChoice = prompt("So, what's it going to be? Rock, paper or scissors?");
+ 		var userChoice = prompt("So, what's it going to be? Rock, paper or scissors?");
 		var computerChoice = Math.random();
 		if (computerChoice < 0.33) {
 			computerChoice = "rock";
@@ -33,9 +33,9 @@
 			}
 			else if (userChoice.toLowerCase() == "paper") {
 				if (computerChoice == "rock") {
-					document.write("The computer chose rock. You lose!");
+					document.write("The computer chose rock. You win!");
 				} else {
-					document.write("The computer chose scissors. You win!");
+					document.write("The computer chose scissors. You lose!");
 				}
 			}
 			else if (userChoice.toLowerCase() == "scissors") {
