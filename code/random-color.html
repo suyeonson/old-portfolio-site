@@ -22,19 +22,36 @@
     	}
 	</style>
 </head>
-<body>
-	<div style="font-family: 'lato', sans-serif; font-size: 40px; text-align: center; padding-top: 200px;">
+<body style="font-family: 'lato', sans-serif; font-size: 40px; text-align: center; padding-top: 200px;">
+	<div class='color'>
 	</div>
-	<FORM style="margin-top: 10px; text-align: center;">
-		<INPUT TYPE="button" onClick="history.go(0)" VALUE="I hate this color. Give me another." class="button">
-	</FORM>
+	<form>
+		<input type=button value="Refresh" onClick="history.go()">
+	</form>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script>
-		var randomColor = function () {
-			return '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+		var color;
+		var rgbColor;
+		function randomColor() {
+			color = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
 		}
-		$('body').css( "background-color", randomColor);
-		$('div').html(randomColor);
+
+		function hexToRgb(hex) {
+		    var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+		    return result ? {
+		        r: parseInt(result[1], 16),
+		        g: parseInt(result[2], 16),
+		        b: parseInt(result[3], 16)
+		    } : null;
+		}
+
+		$(document).ready(function() {
+			randomColor();
+			rgbColor = hexToRgb(color);
+			console.log(rgbColor);
+			$('body').css('background-color', 'rgb(' + rgbColor.r + ', ' + rgbColor.g + ', ' + rgbColor.b + ')');
+			$('.color').html(color);
+		})
 	</script>
 </body>
 </html>
