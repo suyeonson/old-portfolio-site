@@ -113,7 +113,12 @@ ul a:hover {
 	margin-left: 5px;
 	display: inline-block;
 	float: left;
-	padding-top: 7px;
+}
+#website, #facebook {
+	padding-top: 4px;
+}
+#twitter {
+	padding-top: 0px;
 }
 #website, #facebook, #twitter span {
 	font-size: 15px;
@@ -126,6 +131,7 @@ ul a:hover {
 }
 #twitter span {
 	color: #8A8A8A;
+	padding-top: 0px;
 }
 h3 {
 	display:inline-block;
