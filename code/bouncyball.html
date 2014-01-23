@@ -46,21 +46,24 @@
 	</canvas>	
 	<script>
 	var context;
-	var x=250;
-	var y=200;
+	var x=100;
+	var y=50;
 	var dx=5;
-	var dy=5;
-
+	var dy=2;
+	var speed;
+	function changeSpeed() {
+		speed - 10;
+	}
 	function init()
 	{
 		context = myCanvas.getContext('2d');
-		setInterval(draw,20);
+		setInterval(draw,speed);
 	}
 	function draw() {
 		context.clearRect(0,0,900,900);
 		context.beginPath();
 		context.fillStyle="#6dbbc2";
-		context.arc(x,y,30,0,Math.PI*2,true); 
+		context.arc(x,y,30,0,Math.PI*180,true); 
 		context.closePath();
 		context.fill();
 		if (x<30 || x>470) dx=-dx;
@@ -70,4 +73,5 @@
 	}
 	</script>
 	</div>
+	<button onclick="changeSpeed()">Next Level</button>
 </body>
