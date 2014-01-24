@@ -10,9 +10,9 @@ h1 {
 	font-family: 'Crete Round', serif;
 	color: #FFFFFF;
 	text-align: center;
-	font-size: 450%;
+	font-size: 5.3em;
 	padding-top: 10%;
-	margin-bottom: 0;
+	margin-bottom: 0.5%;
 	padding-bottom: 0;
 	line-height: 100px;
 	text-shadow: 1.8px 1.8px #686868;
@@ -21,9 +21,8 @@ h2 {
 	font-family: 'Lato', sans-serif;
 	color: #888888;
 	text-align: center;
-	font-size: 95%;
+	font-size: 0.9em;
 	margin-top: 0;
-	padding-top: 0;
 	margin-bottom: 1.5%;
 }
 #body_container {
