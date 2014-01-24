@@ -42,23 +42,23 @@
 	</div> -->
 	<div style="text-align: center;">
 	<canvas id="myCanvas" width="500" height="500" style="display: inline; background-color: #f0f0f0; margin-top: 200px">
-		
 	</canvas>	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script>
 	var context;
 	var x=100;
 	var y=50;
 	var dx=5;
 	var dy=2;
-	var speed;
+	var speed = 30;
+	var decSpeed = 5;
 	function changeSpeed() {
-		speed - 10;
-	}
-	function init()
-	{
+		speed -= decSpeed;
+	};
+	function init() {
 		context = myCanvas.getContext('2d');
-		setInterval(draw,speed);
-	}
+		setInterval(draw, speed);
+	};
 	function draw() {
 		context.clearRect(0,0,900,900);
 		context.beginPath();
@@ -71,9 +71,7 @@
 		x+=dx;
 		y+=dy;
 	};
-	    $('#MyButton').click(function()){
-       changeSpeed();
-    	};
 	</script>
 	</div>
+	<button onclick="changeSpeed()">Try it</button>
 </body>
