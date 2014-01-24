@@ -91,6 +91,7 @@ ul {
 	list-style: none;
 	font-color: black;
 	line-height: 23px;
+	clear: both;
 	overflow: auto;
 	margin-bottom: 10px;
 }
