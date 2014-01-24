@@ -1,84 +1,71 @@
-<!DOCTYPE html>
-<head>
-	   <link href='http://fonts.googleapis.com/css?family=Lato:300|Crete+Round|Josefin+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.14.1/build/cssreset/cssreset-min.css">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <title> suyeon son | code | bouncy ball </title>
-    <link rel="shortcut icon" href="../images/favicon.ico">
-    <script>
-  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-46951407-1', 'suyeon-son.com');
- 		ga('send', 'pageview');
-	</script>
-	<style type="text/css">
-		html {
-    		height: 100%;
-    	}
-    	body {
-    		min-height: 100%;
-    	}
-	</style>	
-	<style media="screen" type="text/css">
-		@import url(http://weloveiconfonts.com/api/?family=entypo);
-		/* entypo */
-		[class*="entypo-"]:before {
- 		 font-family: 'entypo', sans-serif;
-		}
-		a {
-			font-size: 10px;
-			color: black;
-			opacity: 0.4;
-			text-decoration: none;
-		}
-	</style>
-</head>
-<body onLoad="init();">
-<!-- 	<div>
-		<a href="../index.html" title="Take me back home!"><span class="entypo-home"></span></a>
-		<a href="../code.html" title="I want to see other cool stuff."><span class="entypo-code"></span></a>
-	</div> -->
-	<div style="text-align: center;">
-	<canvas id="myCanvas" width="500" height="500" style="display: inline; background-color: #f0f0f0; margin-top: 200px">
-	</canvas>	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script>
-	var context;
-	var x=100;
-	var y=50;
-	var dx=5;
-	var dy=2;
-	var speed = 30;
-	var decSpeed = 5;
-	function changeSpeed() {
-		speed -= decSpeed;
-		setInterval(draw, speed);
-	};
-	function init() {
-		context = myCanvas.getContext('2d');	
-	};
-	function draw() {
-		context.clearRect(0,0,900,900);
-		context.beginPath();
-		context.fillStyle="#6dbbc2";
-		context.arc(x,y,30,0,Math.PI*180,true); 
-		context.closePath();
-		context.fill();
-		if (x<30 || x>470) dx=-dx;
-		if (y<30 || y>470) dy=-dy;
-		x+=dx;
-		y+=dy;
-	};
-	$(document).ready(function(){
-		init();
-		setInterval(draw, speed);
-		$('#myCanvas').click(function(){
-			changeSpeed();
-		})
-	})
-	</script>
-	</div>
-	<button onclick="changeSpeed()">Try it</button>
-</body>
+<!DOCTYPE HTML>
+<html>
+  
+  <head>
+    <script type="text/javascript">
+      // Global variables
+      var ballX = 150; // Ball x position.
+      var ballY = 150; // Ball y position.
+      var ballDX = 1; // Change in ball x position.
+      var ballDY = 0.5; // Change in ball y position.
+      var boardX = 300; // Board width.
+      var boardY = 300; // Board height.
+
+
+      // This function is called on page load.
+      $(document).ready(function(){
+          var circle = document.getElementById("circle");
+          circle.addEventListener('click', function() {
+          changeSpeed()
+          }, false);
+        });
+
+      function drawGameSVG() {
+
+        // Play the game until the ball stops.
+        gameLoop = setInterval(drawBall, 16);
+
+      }
+      function changeSpeed() {
+        ballDX += 1;
+        ballDY += 1;
+      }
+
+      function drawBall() {
+
+
+        // Change the ball location.
+        ballX += ballDX;
+        ballY += ballDY;
+        ball.setAttribute("cx", ballX);
+        ball.setAttribute("cy", ballY);
+
+
+        // Bounce on a left or right edge.
+        if (ballX + ballDX > boardX - 15 || ballX + ballDX < 15) ballDX = -ballDX;
+
+        // If ball hits the top, bounce it. 
+        if (ballY + ballDY > boardY - 15 || ballY + ballDY < 15) ballDY = -ballDY;
+
+      }
+
+
+    </script>
+  </head>
+  
+  <body onload="drawGameSVG()">
+    <h1>
+      SVG Racketball
+    </h1>
+    <!-- Create the SVG pane. -->
+    <svg xmlns="http://www.w3.org/2000/svg" height="300" width="300">
+      <!-- Create the board. -->
+      <rect x="1" y="1" width="298" height="298" fill="thistle" id="bpard" />
+      <!-- Create the ball. -->
+      <circle cx="150" cy="150" r="15" fill="tomato" id="ball" onCLick = "changeSpeed()" style="cursor: pointer; cursor: hand;"/>
+
+    </svg>
+
+  </body>
+
+</html>
