@@ -54,10 +54,10 @@
 	var decSpeed = 5;
 	function changeSpeed() {
 		speed -= decSpeed;
+		setInterval(draw, speed);
 	};
 	function init() {
-		context = myCanvas.getContext('2d');
-		setInterval(draw, speed);
+		context = myCanvas.getContext('2d');	
 	};
 	function draw() {
 		context.clearRect(0,0,900,900);
@@ -71,6 +71,13 @@
 		x+=dx;
 		y+=dy;
 	};
+	$(document).ready(function(){
+		init();
+		setInterval(draw, speed);
+		$('#myCanvas').click(function(){
+			changeSpeed();
+		})
+	})
 	</script>
 	</div>
 	<button onclick="changeSpeed()">Try it</button>
