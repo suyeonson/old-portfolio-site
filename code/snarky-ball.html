@@ -34,69 +34,44 @@
 		}
 	</style>
     <script type="text/javascript">
-      // Global variables
-      var ballX = 150; // Ball x position.
-      var ballY = 150; // Ball y position.
-      var ballDX = 1; // Change in ball x position.
-      var ballDY = 0.5; // Change in ball y position.
-      var boardX = 300; // Board width.
-      var boardY = 300; // Board height.
-
-
-      // This function is called on page load.
-      $(document).ready(function(){
-          var circle = document.getElementById("circle");
-          circle.addEventListener('click', function() {
-          changeSpeed()
-          }, false);
-        });
-
+      var ballX = 150; 
+      var ballY = 150;
+      var ballDX = 3; 
+      var ballDY = 1; 
+      var boardX = 300; 
+      var boardY = 300;  
       function drawGameSVG() {
-
-        // Play the game until the ball stops.
+        window.alert("Betcha you can't catch me.");
         gameLoop = setInterval(drawBall, 16);
-
       }
       function changeSpeed() {
-        ballDX += 1;
-        ballDY += 1;
+      	window.alert("How long did that take you, 10 minutes? Try catching me now.");
+        ballDX += 0.3;
+        ballDY += 0.3;
+        gameLoop = setInterval(drawBall, 16);
       }
-
       function drawBall() {
-
-
-        // Change the ball location.
         ballX += ballDX;
         ballY += ballDY;
         ball.setAttribute("cx", ballX);
         ball.setAttribute("cy", ballY);
-
-
-        // Bounce on a left or right edge.
         if (ballX + ballDX > boardX - 15 || ballX + ballDX < 15) ballDX = -ballDX;
-
-        // If ball hits the top, bounce it. 
         if (ballY + ballDY > boardY - 15 || ballY + ballDY < 15) ballDY = -ballDY;
-
       }
-
-
     </script>
   </head>
-  <body onload="drawGameSVG()">
+  <body onload="drawGameSVG()" style="text-align: center; margin-top: 100px">
 	<div>
-		<a href="../index.html" title="Take me back home!"><span class="entypo-home"></span></a>
-		<a href="../code.html" title="I want to see other cool stuff."><span class="entypo-code"></span></a>
+		<a href="../index.html" title="Take me back home!" ><span class="entypo-home"></span></a>
+		<a href="../code.html" title="I want to see other cool stuff." style="margin-bottom: 100px;"><span class="entypo-code"></span></a>
 	</div>
-    <!-- Create the SVG pane. -->
     <svg xmlns="http://www.w3.org/2000/svg" height="300" width="300">
-      <!-- Create the board. -->
-      <rect x="1" y="1" width="298" height="298" fill="thistle" id="bpard" />
-      <!-- Create the ball. -->
-      <circle cx="150" cy="150" r="15" fill="tomato" id="ball" onCLick = "changeSpeed()" style="cursor: pointer; cursor: hand;"/>
-
+      <rect x="1" y="1" width="298" height="298" fill="#c6dbe1" id="bpard" />
+      <circle cx="150" cy="150" r="15" fill="#ce285f" id="ball" onCLick = "changeSpeed()" style="cursor: pointer; cursor: hand;"/>
     </svg>
-
+	<form action="http://nelson-haha.com">
+	    <input type="submit" value="Too hard?">
+	</form
   </body>
 
 </html>
