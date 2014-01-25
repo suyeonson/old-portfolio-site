@@ -6,36 +6,49 @@
 		<link rel="shortcut icon" href="images/favicon.ico">
 		<title> suyeon son | journalist </title>
 		<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-46951407-1', 'suyeon-son.com');
-  ga('send', 'pageview');
-
-</script>
+		  ga('create', 'UA-46951407-1', 'suyeon-son.com');
+		  ga('send', 'pageview');
+		</script>
 	</head>
 <body>
-<div id="body_container">
-	<h1>
-		Suyeon Son
-	</h1>
-	<h2>
-	journalist with a social justice mindset.<br> embracing the technological whims of the 21st century. 
-	</h2>
-	<div class='clickables'>
-		<a href="mailto:suyeon.son@icloud.com"><span class="entypo-paper-plane"></span></a>
-		<a href="http://www.linkedin.com/in/suyeonson" target="_blank"><span class="entypo-linkedin"></span></a>
-		<a href="http://www.twitter.com/suyeon_son" target="_blank"><span class="entypo-twitter"></span></a>
-		<a href="http://www.vimeo.com/suyeonson" target="_blank"><span class="entypo-vimeo"></span></a>
-		<a href="http://www.github.com/suyeonson" target="_blank"><span class="entypo-github"></span></a>
+	<div id="body_container">
+		<h1>
+			Suyeon Son
+		</h1>
+		<h2>
+		journalist with a social justice mindset.<br> embracing the technological whims of the 21st century. 
+		</h2>
+		<div class='clickables'>
+			<a href="mailto:suyeon.son@icloud.com"><span class="entypo-paper-plane"></span></a>
+			<a href="http://www.linkedin.com/in/suyeonson" target="_blank"><span class="entypo-linkedin"></span></a>
+			<a href="http://www.twitter.com/suyeon_son" target="_blank"><span class="entypo-twitter"></span></a>
+			<a href="http://www.vimeo.com/suyeonson" target="_blank"><span class="entypo-vimeo"></span></a>
+			<a href="http://www.github.com/suyeonson" target="_blank"><span class="entypo-github"></span></a>
+		</div>
 	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="jquery.fittext.js"></script>
+	<script>
+	  jQuery("#body_container").fitText(0.5);
+	</script>
+	
 	<div class='menu'>
 		<a href="about.html"><img src="images/about.png" style="padding-right: 5%;"></a>
 		<a href="writing.html"><img src="images/writing.png" style="padding-right: 5%;"></a>
 		<a href="code.html"><img src="images/code.png" style="padding-right: 5%;"></a>
 		<a href="multimedia.html"><img src="images/multimedia.png"></a>
+	</div>
+	<div id='menuspacing'>
+		<script>
+			var height = $(window).height();
+			$('#menuspacing').height(height);
+		</script>
 	</div>
 <div class="footer">
 	&copy; Suyeon Son. #ShaveThatYak
