@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300|Crete+Round|Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.14.1/build/cssreset/cssreset-min.css">
+    <title> suyeon son | code | mad libs </title>
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <script>
+  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-46951407-1', 'suyeon-son.com');
+ 		ga('send', 'pageview');
+	</script>
+	<style type="text/css">
+		html {
+    		height: 100%;
+    	}
+    	body {
+    		min-height: 100%;
+    	}
+	</style>	
+	<style media="screen" type="text/css">
+		@import url(http://weloveiconfonts.com/api/?family=entypo);
+		/* entypo */
+		[class*="entypo-"]:before {
+ 		 font-family: 'entypo', sans-serif;
+		}
+		a {
+			font-size: 10px;
+			color: black;
+			opacity: 0.4;
+			text-decoration: none;
+		}
+	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$( document ).ready(function () {
+			$("#story").hide();
+			$("#propernoun1").focus();
+			$("#go_button").click(function () {
+				var propernoun1 = $("#propernoun1").val();
+				if ( propernoun1 == "") {
+					alert("Please complete all fields.");
+					$("#propernoun1").focus();
+					return;
+				}
+				var yourname = $("#yourname").val();
+				if ( yourname == "") {
+					alert("Please complete all fields.");
+					$("#yourname").focus();
+					return;
+				}				
+				var disgustingplural = $("#disgustingplural").val();
+				if ( disgustingplural == "") {
+					alert("Please complete all fields.");
+					$("#disgustingplural").focus();
+					return;
+				}				
+				var nounplural1 = $("#nounplural1").val();
+				if ( nounplural1 == "") {
+					alert("Please complete all fields.");
+					$("#nounplural1").focus();
+					return;
+				}				
+				var nounplural2 = $("#nounplural2").val();
+				if ( nounplural2 == "") {
+					alert("Please complete all fields.");
+					$("#nounplural2").focus();
+					return;
+				}				
+				var adj1 = $("#adj1").val();
+				if ( adj1 == "") {
+					alert("Please complete all fields.");
+					$("#fadj1").focus();
+					return;
+				}				
+				var adj2 = $("#adj2").val();
+				if ( adj2 == "") {
+					alert("Please complete all fields.");
+					$("#adj2").focus();
+					return;
+				}				
+				var adj3 = $("#adj3").val();
+				if ( adj3 == "") {
+					alert("Please complete all fields.");
+					$("#adj3").focus();
+					return;
+				}				
+				var adj4 = $("#adj4").val();
+				if ( adj4 == "") {
+					alert("Please complete all fields.");
+					$("#adj4").focus();
+					return;
+				}				
+				var animal = $("#animal").val();
+				if ( animal == "") {
+					alert("Please complete all fields.");
+					$("#animal").focus();
+					return;
+				}				
+				var nounsingular1 = $("#nounsingular1").val();
+				if ( nounsingular1 == "") {
+					alert("Please complete all fields.");
+					$("#nounsingular1").focus();
+					return;
+				}				
+				var nounsingular2 = $("#nounsingular2").val();
+				if ( nounsingular2 == "") {
+					alert("Please complete all fields.");
+					$("#nounsingular2").focus();
+					return;
+				}				
+				var verb1 = $("#verb1").val();
+				if ( verb1 == "") {
+					alert("Please complete all fields.");
+					$("#fverb1").focus();
+					return;
+				}				
+				var verb2 = $("#verb2").val();
+				if ( verb2 == "") {
+					alert("Please complete all fields.");
+					$("#verb2").focus();
+					return;
+				}				
+				var verb3 = $("#verb3").val();
+				if ( verb3 == "") {
+					alert("Please complete all fields.");
+					$("#verb3").focus();
+					return;
+				}				
+				var verb4 = $("#verb4").val();
+				if ( verb4 == "") {
+					alert("Please complete all fields.");
+					$("#verb4").focus();
+					return;
+				}				
+				var place = $("#place").val();
+				if ( place == "") {
+					alert("Please complete all fields.");
+					$("#place").focus();
+					return;
+				}				
+				var superlative = $("#superlative").val();
+				if ( superlative == "") {
+					alert("Please complete all fields.");
+					$("#superlative").focus();
+					return;
+				}			
+				var person = $("#person").val();
+				if ( person == "") {
+					alert("Please complete all fields.");
+					$("#person").focus();
+					return;
+				}	
+				$("#input").hide();
+		 		$("#story").show();
+		 		$("#propernoun1_out").text(propernoun1);
+		 		$("#yourname_out").text(yourname);
+		 		$("#propernoun1_out").text(propernoun1);
+		 		$("#disgustingplural_out").text(disgustingplural);
+		 		$("#nounplural1_out").text(nounplural1);
+		 		$("#nounplural2_out").text(nounplural2);
+		 		$("#adj1_out").text(adj1);
+		 		$("#adj2_out").text(adj2);
+		 		$("#adj3_out").text(adj3);
+		 		$("#adj4_out").text(adj4);
+		 		$("#animal_out").text(animal);
+		 		$("#nounsingular1_out").text(nounsingular1);
+		 		$("#nounsingular2_out").text(nounsingular2);
+		 		$("#verb1_out").text(verb1);
+		 		$("#verb2_out").text(verb2);
+		 		$("#verb3_out").text(verb3);
+		 		$("#verb4_out").text(verb4);
+		 		$("#person_out").text(person);
+		 		$("#place_out").text(place);
+		 		$("#superlative_out").text(superlative);	
+			});
+		$("#reset_button").click(function() {
+			$("#story").hide();
+			$("#input").show();
+			});
+		});
+	</script>
+</head>
+<body style="font-family: 'lato', sans-serif; font-size: 15px; background-color: #fdbe95; padding-top: 20px; padding-left: 50px">
+	<div>
+		<a href="../index.html" title="Take me back home!"><span class="entypo-home"></span></a>
+		<a href="../code.html" title="I want to see other cool stuff."><span class="entypo-code"></span></a>
+	</div><br>
+	<div id="input">
+		<p><b>Enter an example of each in the text fields.</b></p><br>
+		<p>Random name (ex. Ryan) <input type="text" id="propernoun1"></p>
+		<p>Your name (ex. why do you need an example of your name?) <input type="text" id="yourname"></p>
+		<p>A disgusting object, plural (ex. bugs [sorry, entomologists]) <input type="text" id="disgustingplural"></p>
+		<p>Noun, plural (ex. pencils) <input type="text" id="nounplural1"></p>
+		<p>Noun, plural (ex. pens) <input type="text" id="nounplural2"></p>
+		<p>Adjective (ex. wonderful) <input type="text" id="adj1"></p>
+		<p>Adjective (ex. weird) <input type="text" id="adj2"></p>
+		<p>Adjective (ex. angry) <input type="text" id="adj2"></p>
+		<p>Type of animal, singular (ex. wallaby) <input type="text" id="animal"></p>
+		<p>Noun, singular (ex. book) <input type="text" id="nounsingular1"></p>
+		<p>Verb, past tense (ex. poked) <input type="text" id="verb1"></p>
+		<p>Verb, present tense (ex. eat) <input type="text" id="verb2"></p>
+		<p>Verb, past tense (ex. found) <input type="text" id="verb3"></p>
+		<p>Type of occupation (ex. janitor) <input type="text" id="person"></p>
+		<p>Adjective (ex. happy) <input type="text" id="adj4"></p>
+		<p>Proper noun, restaurant (ex. Papa John's) <input type="text" id="place"></p>
+		<p>Verb, past tense (ex. wrote) <input type="text" id="verb4"></p>
+		<p>Noun, singular (ex. computer) <input type="text" id="nounsingular2"></p>
+		<p>Superlative (ex. worst) <input type="text" id="superlative"></p><br>
+		<p><button id="go_button" title="Tell story!">Madlib it!</button>
+	</div>
+	<div id="story">
+		<p>To:&nbsp;<span id="propernoun1_out"></span>@email.com</p>
+		<p>From:&nbsp;<span id="yourname_out"></span>@email.com</p>
+		<p>Subject: Can't make work today</p>
+		<br>
+		<p>Hi,</p><br>
+		<p>I've come down with a bad case of the&nbsp;<span id="disgustingplural_out"></span>. I've been throwing up <span id="nounplural1_out"></span>&nbsp;all day and keep forgetting what&nbsp;<span id="nounplural2_out"></span>&nbsp;are. My hands are&nbsp;<span id="adj1_out"></span>&nbsp;as a result, and my hair is&nbsp;<span id="adj2_out"></span>. Yesterday, I was bitten by my neighbor's&nbsp;<span id="adj3_out"></span>&nbsp;<span id="animal_out"></span>. I tried to fight it with my&nbsp;<span id="nounsingular1_out"></span>, but it&nbsp;<span id="verb1_out"></span>&nbsp;and proceeded to furiously&nbsp;<span id="verb2_out"></span>. I&nbsp;<span id="verb3_out"></span>&nbsp;and called for help, but only a&nbsp;<span id="person_out"></span>&nbsp;came to my aid. He was&nbsp;<span id="adj4_out"></span>.&nbsp;I finally reached my phone and dialed 911, but for some reason it redirected me to&nbsp;<span id="place_out"></span>! It was a lost cause. I&nbsp;<span id="verb4_out"></span>&nbsp;all the way back home, where I found solace in my&nbsp;<span id="nounsingular2_out"></span>. I'm sorry to say, but I won't make it into work today. Hopefully you will understand.</p>
+		<br>
+		<p>Sincerely,</p>
+		<br>
+		<p>Your&nbsp;<span id="superlative_out"></span>&nbsp;employee</p><br>
+		<p><button id="reset_button" title="Show input fields again">Let me make some changes</button></p>
+	</div>
+</body>
+</html>
