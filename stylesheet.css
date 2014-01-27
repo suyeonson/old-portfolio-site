@@ -17,12 +17,13 @@ h1 {
 }
 h2 {
 	font-family: 'Lato', sans-serif;
-	color: #888888;
+	color: #FFFFFF;
 	text-align: center;
 	font-size: 0.06em;
 	margin-top: 0;
 	margin-bottom: 0.8em;
 	text-shadow: 0.1em 0.1em #444444;
+	opacity: 0.3;
 }
 #body_container {
 	background-color: #202020;
